@@ -1,6 +1,7 @@
 ; most the setting is from http://dev.solita.fi/2014/03/18/pimp-my-repl.html
 {:user  {:plugins  [[lein-pprint "1.1.1"]]
-         :dependencies  [[slamhound "1.3.1"]
+         :dependencies  [[leiningen #=(leiningen.core.main/leiningen-version)]
+                         [slamhound "1.3.1"]
                          [org.clojars.gjahad/debug-repl "0.3.3"]
                          [difform "1.1.2"]
                          [clj-ns-browser "1.3.1"]
